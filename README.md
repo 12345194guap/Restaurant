@@ -114,6 +114,7 @@ Pragma: no-cache
 Content-Encoding: gzip  
   
 **Запрос**  
+http://cr36980.tw1.ru/menu.php     
 Host: cr36980.tw1.ru  
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:108.0) Gecko/  20100101 Firefox/108.0  
 Accept: */*  
