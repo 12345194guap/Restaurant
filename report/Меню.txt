@@ -1,0 +1,14 @@
+actor "Пользователь" as user
+database "БД" as db
+user-->db:Посмотреть описание
+activate db
+box right of db:Выгрузка описания товара
+db->user:*** Описание ***
+deactivate db
+user-->db:Создать заказ
+activate db
+box right of db:Проверка на повторный заказ
+db->user:Ваш заказ уже готовится
+box right of db:Добавление заказа в базу таблицу orders
+db->user:Заказ успешно создан!
+deactivate db

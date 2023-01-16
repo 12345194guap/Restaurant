@@ -1,0 +1,19 @@
+actor "Админ" as admin
+actor "Пользователь" as user
+participant "Сервер" as server
+database "БД" as db
+user-->server:Обновление страницы
+server-->db:Запрос на получение блюд
+box right of db:Проверка на существование блюд
+db->server:Отправка найденных блюд
+server->user:Вывод блюд
+user-->server:Показать описание
+server-->db:Запрос на получение описания
+box right of db:Проверка на существование описания
+db->server:Отправка найденного описания
+server->user:Вывод описания
+admin-->server:Заказ готов
+server-->db:Удалить заказ
+box right of db:Удаление заказа
+db->server:Заказ удален
+server->user:Отправка уведомления в ТГ

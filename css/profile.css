@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+	margin: 0;
+}
+
+input, button {
+	outline: none;
+	border: none;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+/* Профиль */
+
+.main {
+    width: 800px;
+    height: 500px;
+    align-items: center;
+}
+
+.main_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.title_header {
+    width: 100%;
+    color: #5A4DAC;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.header_btns {
+    display: flex;
+}
+
+.link_header {
+    background-color: #806CFF;
+    padding: 10px;
+    margin-right: 40px;
+    width: 130px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.form_main {
+    display: flex;
+    margin-left: 250px;
+}
+
+.telegram_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telegram_title {
+    margin-bottom: 5px;
+    color: rgba(90, 77, 172, 0.8);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.tg_username {
+    width: 170px;
+    padding: 6px;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.5);
+    text-align: center;
+    color: rgb(90, 77, 172, 0.8);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.tg_username::placeholder {
+    color: rgb(90, 77, 172, 0.8);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.btn_main {
+    margin-left: 100px;
+    margin-top: 28px;
+    background-color: #806CFF;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    height: 40px;
+}
+
+.msg {
+    display: none;
+    position: absolute;
+    font-size: 16px;
+    margin-top: 80px;
+    margin-left: 50px;
+}

@@ -1,0 +1,8 @@
+actor "Пользователь" as user
+database "БД" as db
+user-->db:Ввод почты / пароля
+activate db
+box right of db:Проверка данных на существование / совпадение
+db->user:Некорректные почта или пароль!
+db->user:Перенаправление на страницу меню
+deactivate db

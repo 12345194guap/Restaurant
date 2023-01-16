@@ -1,0 +1,20 @@
+actor "Админ" as user
+database "БД" as db
+user-->db:Добавить блюдо
+activate db
+box right of db:Валидация названия / цены / описания / фото
+db->user:Произошла ошибка!
+box right of db:Добавление данных в таблицу menu
+db->user:Успешно!
+deactivate db
+user-->db:Отредактировать блюдо
+activate db
+box right of db:Валидация поля / полей
+db->user:Произошла ошибка!
+box right of db:Обновление данных в таблице
+db->user:Успешно!
+deactivate db
+user-->db:Подтвердить готовность заказа
+activate db
+box right of db:Удаление заказа из таблицы, отправка сообщения пользователю в ТГ
+deactivate db

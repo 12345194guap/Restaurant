@@ -1,0 +1,546 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 500px;
+}
+
+h3 {
+	margin: 0;
+}
+
+input, button {
+	outline: none;
+	border: none;
+}
+
+button {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+/* Админка */
+
+.header {
+    position: fixed;
+    z-index: 50;
+    background-color: rgb(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+.header_line {
+    position: fixed;
+    z-index: 50;
+    right: -1px;
+    top: 100px;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(112, 90, 249, 0.8);
+}
+
+.header_title {
+    color: #5A4DAC;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+.header_btns {
+    width: 400px;
+}
+
+.header_link_exit {
+    background-color: #806CFF;
+    padding: 10px 30px;
+    margin-right: 60px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.first_level {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supple_dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 400px;
+    margin-left: 80px;
+}
+
+.supple_title_h2 {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: #5A4DAC;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.supple_form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+}
+
+.supple_inputs_1 {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.supple_form input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    color: rgb(112, 90, 249);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 1px solid rgba(112, 90, 249, 0.6);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.supple_form input::placeholder {
+    text-align: center;
+}
+
+.supple_description {
+    width: 200px;
+    padding: 10px;
+    color: rgb(112, 90, 249);
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid rgba(112, 90, 249, 0.6);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    resize: none;
+}
+
+.supple_description::placeholder {
+    text-align: center;
+}
+
+.supple_inputs_2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-file-btn {
+	background-color: #806CFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.input-file-btn:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+
+.input-file-text {
+	padding: 0 10px;
+	line-height: 40px;
+	text-align: center;
+	height: 40px;
+	box-sizing: border-box;
+	width: 200px;
+	border: 1px solid rgba(112, 90, 249, 0.6);
+    margin-bottom: 10px;
+}
+
+.input-input {
+    margin-bottom: 30px;
+}
+
+.input-file {
+	display: flex;
+    flex-direction: column;
+    width: 200px;
+    text-align: center;
+    color: rgb(112, 90, 249);
+}
+
+
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.supple_btn {
+    margin-top: 40px;
+    width: 200px;
+    height: 40px;
+    background-color: #806CFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.supple_btn:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+
+
+/* Редактирование */
+.recipe_dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 600px;
+    margin-right: 100px;
+}
+
+.recipe_title_h2 {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color: #5A4DAC;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.recipe_form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.recipe_inputs_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe_form input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: rgb(112, 90, 249);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 1px solid rgba(112, 90, 249, 0.6);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.recipe_form input::placeholder {
+    text-align: center;
+}
+
+.recipe_inputs_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe_description {
+    width: 200px;
+    height: 130px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: rgb(112, 90, 249);
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid rgba(112, 90, 249, 0.6);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    resize: none;
+}
+
+.recipe_description::placeholder {
+    text-align: center;
+}
+
+.recipe_btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    background-color: #806CFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}   
+
+.recipe_btn:hover {
+    background-color: #4432AE;
+    box-shadow: none;
+}
+
+.recipe_content {
+    display: flex;
+}
+
+.choice_food {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice_food_btn {
+    width: 150px;
+    height: 40px;
+    background-color: #806CFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+.choice_food_btn:hover {
+    background-color: #4432AE;
+}
+
+.choice_food_list {
+    opacity: 0;
+    transition: 0.4s;
+    text-align: center;
+    padding-top: 15px;
+    width: 150px;
+    list-style-type: none;
+    color: #5A4DAC;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5A4DAC;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.item_active {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5A4DAC;
+    cursor: pointer;
+    transition: 0.4s;
+    color: #30295c;
+    user-select: none;
+}
+
+.item:hover {
+    color: #3b3372;
+}
+
+/* Заказ */
+.order_accept {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_accept_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.order_accept_svg {
+    width: 30px;
+    margin-left: 40px;
+    height: 30px;
+    background-color: #5a4dac;
+    padding-top: 1px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.4s;
+}
+
+.order_accept_svg svg {
+    fill: #fff;
+    transition: transform 1s ease;
+}
+
+.rotate_first {
+    transform: rotate(360deg);
+}
+
+.rotate_second {
+    transform: rotate(-360deg);
+}
+
+.order_accept_svg:hover {
+    background-color: #483e89;
+}
+
+.order_accept_svg:active {
+    background-color: #483e89;
+    box-shadow: none;
+}
+
+.order_title {
+    color: #5A4DAC;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.order_list_div {
+    display: none;
+    width: 400px;
+    padding-top: 20px;
+    background-color: #5A4DAC;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+}
+
+.order_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.order_sector {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order_item {
+    user-select: none;
+    background-color: #fff;
+    color: #5A4DAC;
+    width: 120px;
+    height: 25px;
+    padding-top: 3px;
+    border-radius: 8px;
+}
+
+.order_btn {
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px rgba(56, 250, 7, 0.8);
+    border-radius: 8px;
+    background-color: #38FA07;
+    color: #5A4DAC;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.order_btn:hover {
+    box-shadow: none;
+}
+
+.msg {
+    position: absolute;
+    margin-top: 120px;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+}
+
+.msg_success {
+    position: absolute;
+    margin-top: 120px;
+    color: green;
+    padding: 15px 0 0 0;
+	font-size: 16px;
+    text-shadow: 1px 1px 10px green;
+}
+
+.msg_error {
+    position: absolute;
+    margin-top: 120px;
+    color: red;
+    padding: 15px 0 0 0;
+	font-size: 16px;
+    text-shadow: 1px 1px 10px red;
+}
+
+.recipe_msg {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 60px;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+}
+
+.recipe_msg_success {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 60px;
+    color: green;
+    padding: 15px 0 0 0;
+	font-size: 16px;
+    text-shadow: 1px 1px 10px green;
+}
+
+.recipe_msg_error {
+    position: absolute;
+    margin-top: 120px;
+    margin-right: 60px;
+    color: red;
+    padding: 15px 0 0 0;
+	font-size: 16px;
+    text-shadow: 1px 1px 10px red;
+}

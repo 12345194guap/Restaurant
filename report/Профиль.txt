@@ -1,0 +1,9 @@
+actor "Пользователь" as user
+database "БД" as db
+user-->db:Сменить id телеграма
+activate db
+box right of db:Валидация id
+db->user:id указан некорректно
+box right of db:Обновление id
+db->user:Успешно!
+deactivate db
