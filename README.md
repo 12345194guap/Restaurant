@@ -168,11 +168,11 @@ Pragma: no-cache
 **Инициализация базы данных, создание таблиц (conn_db.php)**
 
 ```php
-$pdo = new PDO("mysql:host=localhost", "root", "root");
+$pdo = new PDO("mysql:host=localhost", "cr36980_rest", "5AG8fWxB");
 $sql = 'CREATE DATABASE IF NOT EXISTS cr36980_rest';
 $pdo->exec($sql);
 
-$pdo = new PDO('mysql:host=localhost;dbname=cr36980_rest;charset=utf8', 'root', 'root');
+$pdo = new PDO('mysql:host=localhost;dbname=cr36980_rest;charset=utf8', 'cr36980_rest', '5AG8fWxB');
 try {
     $pdo->exec("CREATE TABLE IF NOT EXISTS users(
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
