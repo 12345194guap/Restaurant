@@ -32,27 +32,27 @@
 ### 2. Cценарии работы 
 **а) Вход**
 
-![Отправка сообщения](report\images\login.png)
+![Отправка сообщения](/report/images/login.png)
 ***
 **б) Регистрация**
 
-![Добавление комментария](report\images\register.png)
+![Добавление комментария](report/images/register.png)
 
 **в) Меню**
 
-![Добавление комментария](report\images\menu.png)
+![Добавление комментария](report/images/menu.png)
 
 **г) Профиль**
 
-![Добавление комментария](report\images\profile.png)
+![Добавление комментария](report/images/profile.png)
 
 **г) Админ панель**
 
-![Добавление комментария](report\images\admin.png)
+![Добавление комментария](report/images/admin.png)
 ***
 ### 3. API сервера и хореография
 
-![Сервер](report\images\server.png)
+![Сервер](report/images/server.png)
 ***
 ### 4. Структура базы данных
 Таблица ***users***
