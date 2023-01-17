@@ -377,7 +377,7 @@ $(document).ready(function (e){
 $(document).ready(function (){
     $(document).on('click', '.order_btn', confirm_order);
     function confirm_order() {
-        var user_id = $(this).parent().find('.order_item').attr('id')       toString().slice(-1);
+        var user_id = $(this).parent().find('.order_item').attr('id').toString().slice(-1);
         $.ajax({
             url: "../php/admin_confirm_order.php",
             type: 'post',
